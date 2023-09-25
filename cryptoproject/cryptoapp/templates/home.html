@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Crypto Rate Finder</title>
+<style>
+    * { font-size: 50px;}
+    body {  background-color: coral;}
+    h1 { background-color:black;color:white;width:70%;border-radius:30px;}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<center>
+<h1>Crypto Rate Finder</h1>
+<form>
+    <input type="number" name="num" placeholder="Enter a number" min=1 required/>
+    <br/><br/>
+    <input type="radio" name="c" value="BTC" checked=true/>BTC
+    <input type="radio" name="c" value="ETH" />ETH
+    <input type="radio" name="c" value="XRP" />XRP
+    <br><br>
+    <input type="radio" name="target" value="IND" checked=true/>IND
+    <input type="radio" name="target" value="USD" />USD
+    <input type="radio" name="target" value="RUB" />RUB
+    <br><br>
+    <input type="submit" value="Convert"/>
+</form>
+<h2> {{ msg }}</h2>
+</center>
+</body>
+</html>
